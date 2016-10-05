@@ -2,7 +2,7 @@ console.clear();
 
 /* Define API Key */
 var me = {
-  apiKey: ''
+  apiKey: '304228ca1b0100e70bbbbeabda5ee615c37a7d65'
 };
 /* Define person whose Orgs to get */
 var username = 'addyosmani';
