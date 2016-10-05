@@ -1,23 +1,48 @@
+$largemobilePX: 400px;
+$smalltabPX: 568px;
+$largetabPX: 814px;
+@mixin med() {
+     @media only screen and (min-width: #{$largemobilePX}){
+        @content;
+    }
+}
+@mixin large() {
+  @media only screen and (min-width: #{$smalltabPX}){
+    @content;
+  }
+}
+@mixin larger() {
+  @media only screen and (min-width: #{$largetabPX}){
+    @content;
+}
+}
+
 header {
     font-size: 2em;
     margin: 3% 0 3% 3%;
     color: #5b5d5d;
+    @include med {
+        text-align: center;
+    }
 }
 
 #load-button {
     font-size: 1.5em;
     position: relative;
-    width: 42vw;
-    height: 29vh;
+    width: 75vw;
+    height: 17vh;
     border-radius: 3%;
     margin: 3% 3% 6% 2%;
     color: #5d5b5b;
     text-shadow: 2px 2px 4px white;
+    box-shadow: 8px 14px 6px darkgray;
+    transform: translateX(12%);
 }
 
 #orgs-section {
     background: linear-gradient(to right, lightgray, 3%, white);
     padding: 1%;
+    width: 112%;
 }
 
 .avatar-container {
@@ -25,22 +50,38 @@ header {
     border: 1px solid darkgray;
     border-radius: 1%;
     margin: 1%;
-    width: 64vw;
-    height: 39vh;
+    width: 110vw;
+    height: 17vh;
+    @include large() {
+      width: 94vw;
+height: 24vh;
+    }
 }
 
 img {
     position: relative;
-    width: 14vw;
-    top: 16%;
-    left: 3%;
+    width: 19vw;
+    top: 3vh;
+    left: 2vw;
+    @include med {
+      width: 15vw;
+      left: 2vw;
+    }
 }
 
 span {
     position: relative;
     color: #5d5b5b;
     text-shadow: 2px 2px 4px white;
-    font-size: 2.5em;
-    top: -4vh;
-    left: 5vw;
+    font-size: 1.5em;
+    top: 0;
+    left: 4vw;
+    @include large {
+      font-size: 2em;
+top: -2vh;
+    }
+    @include larger {
+      font-size: 2em;
+     top: -2vh;
+    }
 }

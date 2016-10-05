@@ -2,41 +2,63 @@ header {
   font-size: 2em;
   margin: 3% 0 3% 3%;
   color: #5b5d5d; }
+  @media only screen and (min-width: 400px) {
+    header {
+      text-align: center; } }
 
 #load-button {
   font-size: 1.5em;
   position: relative;
-  width: 42vw;
-  height: 29vh;
+  width: 75vw;
+  height: 17vh;
   border-radius: 3%;
   margin: 3% 3% 6% 2%;
   color: #5d5b5b;
-  text-shadow: 2px 2px 4px white; }
+  text-shadow: 2px 2px 4px white;
+  box-shadow: 8px 14px 6px darkgray;
+  transform: translateX(12%); }
 
 #orgs-section {
   background: linear-gradient(to right, lightgray, 3%, white);
-  padding: 1%; }
+  padding: 1%;
+  width: 112%; }
 
 .avatar-container {
   background: lightgray;
   border: 1px solid darkgray;
   border-radius: 1%;
   margin: 1%;
-  width: 64vw;
-  height: 39vh; }
+  width: 110vw;
+  height: 17vh; }
+  @media only screen and (min-width: 568px) {
+    .avatar-container {
+      width: 94vw;
+      height: 24vh; } }
 
 img {
   position: relative;
-  width: 14vw;
-  top: 16%;
-  left: 3%; }
+  width: 19vw;
+  top: 3vh;
+  left: 2vw; }
+  @media only screen and (min-width: 400px) {
+    img {
+      width: 15vw;
+      left: 2vw; } }
 
 span {
   position: relative;
   color: #5d5b5b;
   text-shadow: 2px 2px 4px white;
-  font-size: 2.5em;
-  top: -4vh;
-  left: 5vw; }
+  font-size: 1.5em;
+  top: 0;
+  left: 4vw; }
+  @media only screen and (min-width: 568px) {
+    span {
+      font-size: 2em;
+      top: -2vh; } }
+  @media only screen and (min-width: 814px) {
+    span {
+      font-size: 2em;
+      top: -2vh; } }
 
 /*# sourceMappingURL=main.css.map */

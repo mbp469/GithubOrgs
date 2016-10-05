@@ -2,7 +2,7 @@ console.clear();
 
 /* Define API Key */
 var me = {
-  apiKey: '09378b037f48096c94bb83d9a1d2cd01837f0f5e'
+  apiKey: '1c66dd31a355d781499c96a0115c1119f85efe74'
 };
 /* Define person whose Orgs to get */
 var username = 'addyosmani';
