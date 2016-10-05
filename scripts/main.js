@@ -2,7 +2,7 @@ console.clear();
 
 /* Define API Key */
 var me = {
-  apiKey: '304228ca1b0100e70bbbbeabda5ee615c37a7d65'
+  apiKey: '09378b037f48096c94bb83d9a1d2cd01837f0f5e'
 };
 /* Define person whose Orgs to get */
 var username = 'addyosmani';
@@ -34,6 +34,7 @@ function OrganizationDetails(orgObject) {
     var container = $('<div>').attr('class','avatar-container');
     var avatar = $('<img>').attr('src', this.info.avatar_url).appendTo(container);
     container.appendTo('#orgs-section');
+    $('<span>').html(this.info.login).appendTo(container);
   };
   this.createElements();
 }
